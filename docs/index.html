@@ -1,0 +1,141 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#8f2b3b">
+  <meta name="description" content="DSAA3073 Market Lab: an open project connecting data science, financial markets, ensemble learning, online learning, LLMs, and agents.">
+  <title>3073 Market Lab — Bring Theory to the Market</title>
+  <link rel="icon" type="image/svg+xml" href="favicon.svg?v=2">
+  <link rel="stylesheet" href="styles.css?v=7">
+  <link rel="stylesheet" href="tutorial.css?v=3">
+  <link rel="stylesheet" href="requirements.css?v=2">
+  <script src="app.js?v=6" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <div class="reading-progress" aria-hidden="true"><span id="reading-progress"></span></div>
+  <header class="site-header">
+    <a href="#" class="brand" aria-label="3073 Market Lab home"><span class="brand-mark" aria-hidden="true"><i></i><i></i><i></i></span><span>3073 <b>MARKET LAB</b></span></a>
+    <nav aria-label="Main navigation"><a href="#market">The market</a><a href="#lab">Playground</a><a href="#directions">Possibilities</a><a href="#resources">Learn</a><a href="#requirements">Requirements</a></nav>
+    <a href="https://lixin2002cn.github.io/dsaa3073/" target="_blank" rel="noopener noreferrer" class="course-link">Course home <span aria-hidden="true">↗</span></a>
+  </header>
+  <main id="main">
+    <section class="hero wrap" aria-labelledby="hero-title">
+      <div class="hero-copy">
+        <div class="eyebrow"><span class="tiny-dot"></span> DSAA3073 · OPEN PROJECT</div>
+        <h1 id="hero-title">Bring theory<br>to the <span class="word-market">market<svg viewBox="0 0 230 14" aria-hidden="true"><path d="M3 10 Q100 -2 225 7"/></svg></span>.</h1>
+        <p class="hero-description">When the data keeps changing,<br>what makes a good decision?</p>
+        <p class="hero-detail">A journey from data science to simulated financial markets. Different methods, different perspectives, and room for your own ideas.</p>
+        <div class="hero-actions"><a class="button primary" href="#directions">Explore the possibilities <span aria-hidden="true">↗</span></a><a class="text-link" href="#lab">Visit the playground <span aria-hidden="true">↓</span></a></div>
+        <div class="hero-footnote"><span>Open approaches</span><span>Any model</span><span>Your perspective</span></div>
+      </div>
+      <div class="hero-visual" aria-label="Illustrative market curves, not real backtest results">
+        <div class="visual-question">Markets move.<br><em>Ideas evolve.</em></div>
+        <svg class="hero-chart" viewBox="0 0 560 280" role="img" aria-label="Illustrative curves showing different paths through the same market">
+          <g class="chart-grid"><path d="M0 50H560M0 110H560M0 170H560M0 230H560M70 20V260M200 20V260M330 20V260M460 20V260"/></g>
+          <path class="hero-line-muted" d="M0 220L20 208L40 217L60 195L80 199L100 184L120 192L140 165L160 175L180 160L200 173L220 152L240 163L260 149L280 188L300 195L320 175L340 187L360 156L380 164L400 148L420 164L440 140L460 148L480 139L500 146L520 127L540 135L560 122"/>
+          <path class="hero-line-main" d="M0 227L20 218L40 224L60 201L80 212L100 185L120 196L140 178L160 188L180 157L200 170L220 144L240 155L260 133L280 174L300 160L320 143L340 153L360 122L380 133L400 100L420 109L440 89L460 102L480 72L500 81L520 55L540 62L560 39"/>
+          <circle cx="540" cy="62" r="5" class="chart-end"/>
+          <g class="chart-axis"><text x="4" y="278">Observe</text><text x="244" y="278">Decide</text><text x="510" y="278">Adapt</text></g>
+        </svg>
+        <div class="visual-bottom"><span>Different assumptions. Different paths.</span></div>
+        <div class="floating-note"><span class="note-emoji" aria-hidden="true">🤑</span><div>Beyond returns,<br><strong>what can you explain?</strong></div></div>
+      </div>
+    </section>
+    <div class="principles"><div class="wrap"><span>A SHARED STARTING POINT</span><p>Ideas <i>→</i> Decisions <i>→</i> Evidence <i>→</i> New perspectives</p></div></div>
+
+    <section class="section wrap" id="journey" aria-labelledby="journey-title">
+      <div class="section-heading"><div><div class="eyebrow">01 / FROM THEORY TO DECISIONS</div><h2 id="journey-title">A familiar subject.<br>A different setting.</h2></div><p>Learning, generalization, and sequential decisions meet in a market that keeps moving.</p></div>
+      <div class="journey-grid">
+        <article><span class="journey-no">01</span><h3>Theory in 3073</h3><p>Generalization, regularization, ensembles, and online learning offer different ways to reason about what a method can learn.</p><div class="small-tags"><span>Generalization</span><span>Ensemble</span><span>Online learning</span></div></article>
+        <article><span class="journey-no">02</span><h3>Data science</h3><p>Data turns ideas into models and decisions. The choice of representation, objective, and available information shapes what follows.</p><div class="small-tags"><span>Representation</span><span>Learning</span><span>Decision-making</span></div></article>
+        <article><span class="journey-no">03</span><h3>Financial markets</h3><p>Prices, fundamentals, and news arrive over time. Decisions create a portfolio whose value changes with an uncertain future.</p><div class="small-tags"><span>Information</span><span>Uncertainty</span><span>Adaptation</span></div></article>
+      </div>
+    </section>
+
+    <section class="market-section" id="market" aria-labelledby="market-title"><div class="wrap market-layout">
+      <div class="market-intro"><div class="eyebrow">02 / THE SETTING</div><h2 id="market-title">A market has<br>its own<br>complications.</h2><p>Financial data brings structure, uncertainty, and changing conditions. Their importance varies across assets and time horizons.</p><div class="margin-note"><span aria-hidden="true">↳</span> Where assumptions<br>meet reality.</div><a class="text-link" href="#resources">Financial background ↗</a></div>
+      <div class="market-list">
+        <details open><summary><span class="list-no">01</span><span>The relationships can change<small>NON-STATIONARITY</small></span><span class="details-sign" aria-hidden="true">+</span></summary><div class="details-body"><p>Policies, participants, and economic conditions evolve. A relationship that appears useful in one period may weaken or reverse in another. Adaptation and stability can pull in different directions.</p></div></details>
+        <details><summary><span class="list-no">02</span><span>Observations are connected<small>DEPENDENCE & CORRELATION</small></span><span class="details-sign" aria-hidden="true">+</span></summary><div class="details-body"><p>Many stocks respond to the same event. Neighbouring observations may also share information. A large number of records does not automatically provide an equally large number of independent observations.</p></div></details>
+        <details><summary><span class="list-no">03</span><span>The path matters, too<small>TAIL RISK & DRAWDOWN</small></span><span class="details-sign" aria-hidden="true">+</span></summary><div class="details-body"><p>Average return leaves out part of the story. A few extreme days can substantially change a result, and recovering from a loss can take time. Two portfolios with similar final wealth may have very different journeys.</p></div></details>
+        <details><summary><span class="list-no">04</span><span>Accuracy and returns differ<small>PREDICTION & PAYOFF</small></span><span class="details-sign" aria-hidden="true">+</span></summary><div class="details-body"><p>The size of price moves, position sizes, and holding periods all affect returns. A model can predict many small moves correctly and still lose money on a few large mistakes.</p></div></details>
+        <details><summary><span class="list-no">05</span><span>Actions have a cost<small>TURNOVER & EXECUTION</small></span><span class="details-sign" aria-hidden="true">+</span></summary><div class="details-body"><p>Changing a portfolio involves trading. Fees, bid–ask spreads, and slippage can reduce a paper advantage. A simulation captures only the execution effects included in its rules.</p><a class="inline-source" href="https://www.investor.gov/introduction-investing/getting-started/understanding-fees" target="_blank" rel="noopener noreferrer">Understanding fees · Investor.gov ↗</a></div></details>
+        <details><summary><span class="list-no">06</span><span>History can be misleading<small>SELECTION & INFORMATION</small></span><span class="details-sign" aria-hidden="true">+</span></summary><div class="details-body"><p>A strategy selected from many alternatives may fit one historical period unusually well. Future observations, revised data, and a language model's memory of historical events can also make a result look more predictive than it is.</p></div></details>
+      </div>
+    </div></section>
+
+    <section class="section wrap" id="lab" aria-labelledby="lab-title">
+      <div class="section-heading"><div><div class="eyebrow">03 / THE PLAYGROUND</div><h2 id="lab-title">Three experts.<br>One changing market.</h2></div><p>A market arrives as numbers and words. Follow the price history and daily news as expert weights change.</p></div>
+      <div class="lab-shell">
+        <aside class="lab-controls">
+          <span class="lab-label">Playground <span class="demo-badge">SYNTHETIC DATA</span></span>
+          <fieldset><legend>01 · Market setting</legend><div class="scenario-options"><button type="button" class="scenario active" data-scenario="switch" aria-pressed="true">Regime shift <span>↗ → ↘</span></button><button type="button" class="scenario" data-scenario="range" aria-pressed="false">Sideways market <span>↝ ↝ ↝</span></button><button type="button" class="scenario" data-scenario="shock" aria-pressed="false">Sudden shock <span>→ ↓ ↗</span></button></div></fieldset>
+          <div class="slider-field"><label for="learning-rate">02 · Learning rate η <output id="eta-output" for="learning-rate">1.5</output></label><input id="learning-rate" type="range" min="0" max="8" step="0.1" value="1.5"><div class="range-captions"><span>Slower adjustment</span><span>Faster adjustment</span></div></div>
+          <div class="slider-field"><label for="trading-cost">03 · One-way trading cost <output id="cost-output" for="trading-cost">10 bps</output></label><input id="trading-cost" type="range" min="0" max="40" step="1" value="10"><div class="range-captions"><span>0 bps</span><span>40 bps = 0.40%</span></div></div>
+          <div class="expert-key"><span><i class="dot expert-a"></i>Trend</span><span><i class="dot expert-b"></i>Reversal</span><span><i class="dot expert-c"></i>Defensive</span></div>
+          <p class="control-note">Decide using current weights, observe the day's returns, then update for the next day. Changing a setting restarts at day 0.</p>
+        </aside>
+        <div class="lab-main">
+          <div class="lab-chart-head"><div><span class="lab-label">Portfolio value</span><p>Initial value = 1 · Adaptive vs. daily equal-weight</p></div><span class="day-counter">DAY <b id="day-number">00</b><span>/ 60</span></span></div>
+          <div class="chart-container"><svg id="experiment-chart" viewBox="0 0 760 280" role="img" aria-labelledby="chart-title chart-description"><title id="chart-title">Portfolio values in a synthetic market</title><desc id="chart-description">The chart shows observed days only. Returns and drawdown are also displayed below.</desc><g id="chart-grid"></g><path id="equal-line" class="equal-line"/><path id="adaptive-line" class="adaptive-line"/><circle id="adaptive-end" r="4"/><g id="chart-labels"></g></svg></div>
+          <div class="chart-legend"><span><i class="legend-line adaptive"></i>Adaptive · MWU</span><span><i class="legend-line equal"></i>Daily equal-weight</span><span id="regime-label">Ready for day one</span></div>
+          <section class="daily-news" aria-labelledby="news-label">
+            <div class="news-header"><h3 id="news-label">Today's news</h3><span class="news-badge">FICTIONAL NEWS</span><span id="news-day" class="news-day">DAY 00</span></div>
+            <h4 id="news-headline">A new day brings new information.</h4>
+            <p id="news-summary">Press Next day or Play to see prices and a news brief arrive together.</p>
+          </section>
+          <div class="lab-stats"><div><span>Adaptive return</span><strong id="adaptive-return">0.00%</strong></div><div><span>Equal-weight return</span><strong id="equal-return">0.00%</strong></div><div><span>Adaptive max. drawdown</span><strong id="drawdown">0.00%</strong></div></div>
+          <div class="weights-row"><span>Next-day expert weights</span><div id="weights-bar" class="weights-bar" aria-label="Next-day weights of the three experts"><span class="weight-a"></span><span class="weight-b"></span><span class="weight-c"></span></div><span class="weight-values" id="weight-values">33 / 33 / 33%</span></div>
+          <div class="lab-actions"><button id="play-experiment" type="button" class="button primary small">Play <span aria-hidden="true">▶</span></button><button id="step-experiment" type="button" class="button outline small">Next day →</button><button id="reset-experiment" type="button" class="reset-button">↺ Reset</button><span id="experiment-status" role="status" aria-live="polite">Ready when you are.</span></div>
+        </div>
+      </div>
+      <details class="method-details"><summary>About this illustration <span aria-hidden="true">↗</span></summary><div><p>The three experts represent virtual strategy funds. Their 60-day returns are generated by fixed functions. The adaptive portfolio uses the weights available at the start of each day, then applies <code>wᵢ ← wᵢ exp(η rᵢ / 0.01)</code> and normalizes for the next day. The equal-weight portfolio returns to one third per expert each day.</p><p>Each day reveals its returns and a fictional news brief together. The news shows another type of market data: text. These demo experts do not read the news; their returns are fixed. A headline alone does not explain a day's price move.</p><p>Both portfolios pay the same one-way fee on traded notional, including the initial investment. Trades account for weight drift and the cash needed to pay fees. Internal trading within the virtual funds, slippage, and market impact are omitted. Maximum drawdown is measured from the highest observed portfolio value.</p><p>This illustration uses synthetic teaching data, not real market returns. The illustration does not establish a regret guarantee or imply profitability in financial markets.</p></div></details>
+    </section>
+
+    <section class="directions-section" id="directions" aria-labelledby="directions-title"><div class="wrap">
+      <div class="section-heading"><div><div class="eyebrow">04 / POSSIBILITIES</div><h2 id="directions-title">One market.<br>Many ways to think.</h2></div><p>Some connections between 3073 and financial markets. Your approach can go beyond any of these.</p></div>
+      <div class="directions-layout"><div class="direction-tabs" role="tablist" aria-label="Possible directions" aria-orientation="vertical" id="direction-tabs"></div><article class="direction-panel" id="direction-panel" role="tabpanel" tabindex="0"></article></div>
+    </div></section>
+
+    <section class="section wrap" id="project" aria-labelledby="project-title">
+      <div class="section-heading"><div><div class="eyebrow">05 / THE OPEN PROJECT</div><h2 id="project-title">A shared environment.<br>An approach of your own.</h2></div><p>StockBench provides a starting point for simulated, sequential portfolio decisions.</p></div>
+      <div class="project-flow" aria-label="Sequential trading process"><div><span>01</span><strong>Observe</strong><small>Information available so far</small></div><i aria-hidden="true">→</i><div><span>02</span><strong>Decide</strong><small>A target portfolio</small></div><i aria-hidden="true">→</i><div><span>03</span><strong>Execute</strong><small>Simulated trading</small></div><i aria-hidden="true">→</i><div><span>04</span><strong>Receive feedback</strong><small>What happens next</small></div></div>
+      <div class="project-notes"><p>Quantitative models, ensembles, online learning, LLMs, agents, and hybrid systems all have a place here. Model choice is open. The way you combine information and make decisions is yours to develop.</p><p>The project is also a space to share methods and discuss different views of what makes a good decision. Financial performance, risk, adaptability, interpretability, and computational cost offer different perspectives.</p></div>
+      <div class="project-summary" id="requirements" aria-labelledby="requirements-title">
+        <div class="project-summary-heading"><h3 id="requirements-title">Project Requirements &amp; Rubric</h3><a href="requirements.html">Full details ↗</a></div>
+        <div class="project-summary-cards">
+          <div><strong>8<small>pages max.</small></strong><b>Technical report</b><p>English · LaTeX · ACL template</p></div>
+          <div><strong>20<small>minutes</small></strong><b>Presentation</b><p>English · Individual work</p></div>
+          <div><strong>5<small>minutes</small></strong><b>Discussion</b><p>Questions &amp; different views</p></div>
+        </div>
+        <div class="project-summary-submit"><time datetime="2026-11-27T23:59:00+08:00">27 Nov 2026 · 23:59 (UTC+8)</time><span>Submit on Canvas</span><code>NAME-STUDENTID</code></div>
+        <figure class="score-overview"><figcaption>100 points for your work <span>Profit rank earns 0 points.</span></figcaption>
+          <div class="score-bar" role="img" aria-label="Grading: applying 3073 ideas 20 points, technical depth 25, evidence and analysis 20, organization and clarity 15, visualization 10, presentation and discussion 10."><span class="score-1" style="width:20%">20</span><span class="score-2" style="width:25%">25</span><span class="score-3" style="width:20%">20</span><span class="score-4" style="width:15%">15</span><span class="score-5" style="width:10%">10</span><span class="score-6" style="width:10%">10</span></div>
+          <div class="score-legend"><span><i class="score-1" aria-hidden="true"></i>3073 ideas <b>20</b></span><span><i class="score-2" aria-hidden="true"></i>Technical depth <b>25</b></span><span><i class="score-3" aria-hidden="true"></i>Evidence &amp; analysis <b>20</b></span><span><i class="score-4" aria-hidden="true"></i>Organization &amp; clarity <b>15</b></span><span><i class="score-5" aria-hidden="true"></i>Visualization <b>10</b></span><span><i class="score-6" aria-hidden="true"></i>Presentation &amp; discussion <b>10</b></span></div>
+        </figure>
+        <p class="project-summary-note">Any model · Vibe coding welcome · Presentation order on Canvas</p>
+      </div>
+      <p class="source-note">Course data and the execution interface will be announced separately. <a href="https://stockbench.github.io/" target="_blank" rel="noopener noreferrer">About StockBench ↗</a></p>
+    </section>
+
+    <section class="section wrap resources-section" id="resources" aria-labelledby="resources-title">
+      <div class="section-heading"><div><div class="eyebrow">06 / FINANCE GUIDE</div><h2 id="resources-title">Finance, step by step.</h2></div></div>
+      <div class="guide-parts">
+        <a class="guide-part" href="learn/basics.html"><span>PART 01</span><div><h3>Finance basics</h3><p>Shares, returns, portfolios, and trading costs.</p></div><span class="guide-arrow" aria-hidden="true">↗</span></a>
+        <a class="guide-part" href="learn/project.html"><span>PART 02</span><div><h3>Finance in this project</h3><p>Daily information, holdings, and performance measures.</p></div><span class="guide-arrow" aria-hidden="true">↗</span></a>
+        <a class="guide-part" href="learn/further.html"><span>PART 03</span><div><h3>Further learning</h3><p>Portfolio risk, market returns, and the role of information.</p></div><span class="guide-arrow" aria-hidden="true">↗</span></a>
+      </div>
+    </section>
+    <section class="home-closing wrap" id="closing-note" aria-label="张磊寄语" lang="zh-CN">
+      <figure class="project-quote">
+        <blockquote><p>最后，还是要有个好心境、好家庭、好身体。投资到最后，反映的是你个人的真实性情和价值观。健康的环境和心情是长期修行的结果。成功诚然需要运气和际遇的配合，但能否幸福地去做投资则掌握在你自己手里。</p></blockquote>
+        <figcaption>张磊 · 《投资中最简单的事》推荐序</figcaption>
+      </figure>
+    </section>
+  </main>
+  <footer class="site-footer wrap"><a class="brand" href="#"><span class="brand-mark" aria-hidden="true"><i></i><i></i><i></i></span><span>3073 <b>MARKET LAB</b></span></a><p>DSAA3073 · Theories in Data Science<br>Open project · Simulated financial markets</p><a href="https://lixin2002cn.github.io/dsaa3073/" target="_blank" rel="noopener noreferrer">Course home ↗</a></footer>
+  <noscript><div class="noscript-note">Reading materials are available without JavaScript. The interactive playground and topic tabs require JavaScript.</div></noscript>
+</body>
+</html>

@@ -1,0 +1,52 @@
+<section class="lesson" id="further-portfolios">
+  <h3>How a mix changes risk</h3>
+  <p>A portfolio's future return is unknown. An <strong>expected return</strong> is an average of possible future returns, weighted by their probabilities. In practice, we estimate it from data or a model. It is not a promised return.</p>
+  <p>If all the money is invested in two stocks, the expected return is:</p>
+  <div class="equation">μ<sub>p</sub> = w<sub>A</sub>μ<sub>A</sub> + w<sub>B</sub>μ<sub>B</sub></div>
+  <p>Here, μ means expected return, p means portfolio, and w is the share of money in each stock. The weights add to one. All returns must refer to the same period.</p>
+  <p><strong>Variance</strong> measures the average squared distance from the expected return. Its square root, the <strong>standard deviation</strong> σ, has the same units as returns. <strong>Correlation</strong> ρ describes how two returns move together. It ranges from −1 to +1. It changes the risk of their mix:</p>
+  <div class="equation">σ<sub>p</sub><sup>2</sup> = w<sub>A</sub><sup>2</sup>σ<sub>A</sub><sup>2</sup> + w<sub>B</sub><sup>2</sup>σ<sub>B</sub><sup>2</sup> + 2w<sub>A</sub>w<sub>B</sub>ρσ<sub>A</sub>σ<sub>B</sub></div>
+  <aside class="example">
+    <h4>Two stocks, equal weights</h4>
+    <p>This is a separate, imagined one-month model for Stock A and Stock B. Each gets half the money. Estimated expected returns are 1% and 0.5%; both standard deviations are 10%.</p>
+    <p>Expected portfolio return = 0.5 × 1% + 0.5 × 0.5% = <strong>0.75%</strong>.</p>
+    <table><thead><tr><th scope="col">Estimated correlation</th><th scope="col">Portfolio standard deviation</th></tr></thead><tbody><tr><td>ρ = 1</td><td>10%</td></tr><tr><td>ρ = 0</td><td>√(0.5² × 0.1² + 0.5² × 0.1²) ≈ 7.07%</td></tr></tbody></table>
+    <p>The estimated mean stays the same, but the spread changes. These numbers describe this model, not known future outcomes.</p>
+  </aside>
+  <!-- DIAGRAM: Two side-by-side panels. Same 50/50 allocation in both. Left: A and B move together (rho=1), portfolio spread 10%. Right: A and B have zero correlation, portfolio spread 7.07%. Label all values as an imagined model, not market data. -->
+  <p>Holding more names helps less when they move together. Correlation can change, and zero correlation does not imply independence. A lower standard deviation also does not remove every type of loss.</p>
+  <p class="lesson-reading"><a href="https://ocw.mit.edu/courses/15-401-finance-theory-i-fall-2008/pages/video-lectures-and-slides/portfolio-theory/" target="_blank" rel="noopener noreferrer">MIT: Portfolio Theory ↗</a> develops the mean, standard deviation, and correlation of portfolio returns.</p>
+</section>
+
+<section class="lesson" id="further-market-risk">
+  <h3>What moved with the market?</h3>
+  <p>A stock can rise because many stocks rose that day. It can also move because of company news. These effects are hard to separate perfectly, but a simple model gives us a starting language:</p>
+  <div class="equation">r<sub>i,t</sub> = α<sub>i</sub> + β<sub>i</sub>r<sub>m,t</sub> + ε<sub>i,t</sub></div>
+  <p>Here, r<sub>i,t</sub> is stock i's return in period t. The market index return is r<sub>m,t</sub>. <strong>Beta</strong> β measures how strongly the stock moves with that index in the fitted model. Here, “fitted” means estimated from past data. Alpha α is the constant term. The remaining part ε is the <strong>residual</strong>: what this model does not explain.</p>
+  <aside class="example">
+    <h4>A market move and a remaining part</h4>
+    <p>For a separate period, suppose Stock A has fitted β = 1.5 and α = 0. If the market rises 2%, the model's market-linked part is 1.5 × 2% = <strong>3%</strong>. If A rises 3.5%, the residual for that period is <strong>0.5 percentage points</strong>.</p>
+    <p>If the market falls, that same positive beta can work in the other direction. Beta describes a fitted relationship; it does not promise tomorrow's response.</p>
+  </aside>
+  <p>A <strong>risk factor</strong> is a common source of return changes. Models can include several factors. For example, researchers use market returns and returns of stock groups based on company size or value measures.</p>
+  <p>In this setting, <strong>exposure</strong> means how sensitive a portfolio is to a factor. High returns may partly reflect such exposure. A positive fitted alpha is not proof of skill: the sample may be short, costs may be missing, or the chosen model may leave out other drivers.</p>
+  <p class="lesson-reading"><a href="https://mba.tuck.dartmouth.edu/pages/faculty/ken.french/data_library.html" target="_blank" rel="noopener noreferrer">Kenneth French: Data Library ↗</a> provides factor and portfolio return series, with descriptions of how they are built.</p>
+</section>
+
+<section class="lesson" id="further-information">
+  <h3>Information, expectations, and learning</h3>
+  <p>A price reflects trades made by people with different information and beliefs. Public news may already be widely known when a model reads it. The idea of <strong>market efficiency</strong> asks how much available information is already reflected in prices. It does not mean that prices are always correct.</p>
+  <aside class="example">
+    <h4>Good news can disappoint</h4>
+    <p>People expect Stock A's company profit to grow by 10%. It reports 5% growth. Profit grew, but the result is below the earlier expectation by <strong>5 percentage points</strong>. The stock price may fall. Reading “profit increased” alone misses this difference.</p>
+  </aside>
+  <p>Markets also change as policies, participants, and tools change. This connects finance to several learning ideas:</p>
+  <ul>
+    <li><strong>Ensembles</strong> combine views. Their errors may still overlap if they use the same information.</li>
+    <li><strong>Online learning</strong> updates a method after feedback arrives. Fast changes can respond to new conditions but also to noise.</li>
+    <li><strong>LLMs</strong> can turn text into useful information. Understanding a sentence does not mean its price effect is known.</li>
+    <li><strong>Agents</strong> organize tools, memory, and decisions. More steps do not automatically produce better decisions.</li>
+  </ul>
+  <p class="lesson-reading"><a href="https://oyc.yale.edu/economics/econ-252" target="_blank" rel="noopener noreferrer">Yale: Financial Markets ↗</a> includes lessons on efficient markets, risk, and human behavior.</p>
+  <p class="lesson-reading"><a href="https://stockbench.github.io/" target="_blank" rel="noopener noreferrer">StockBench ↗</a> shows how prices, fundamentals, and news enter a sequence of simulated trading decisions.</p>
+</section>

@@ -1,0 +1,55 @@
+<section class="lesson" id="project-time">
+  <div class="lesson-heading"><span class="lesson-number">04</span><h3>What was known when the decision was made?</h3></div>
+  <p>A trading method receives information, chooses a portfolio, and later sees the result. The order matters. A <strong>decision time</strong> is the point at which the method must act. Its <strong>information cutoff</strong> is the latest time from which it may use data.</p>
+  <!-- DIAGRAM: A left-to-right timeline: information available by 09:00 → decision at 09:00 → simulated trade → later prices and feedback. Put a news item published at 09:05 to the right of the cutoff. Label all times illustrative, not the course schedule. -->
+  <aside class="example">
+    <h4>A five-minute difference</h4>
+    <p>Suppose a decision is made at 09:00. News published at 08:50 is already available. News published at 09:05 is not. Both items have the same calendar date, but they belong on different sides of the decision.</p>
+    <table><thead><tr><th>Record</th><th>When it becomes available</th><th>Known at 09:00?</th></tr></thead><tbody><tr><td>Yesterday's closing price</td><td>After yesterday's market close</td><td>Yes</td></tr><tr><td>News item</td><td>Today, 09:05</td><td>No</td></tr><tr><td>Today's closing price</td><td>After today's market close</td><td>No</td></tr></tbody></table>
+    <p>These times explain the idea; they do not define the course trading schedule.</p>
+  </aside>
+  <p>Financial reports also have two times: the period they describe and the date they are released. A report about last year's earnings may not be public until several months later. A time zone can also change which event came first.</p>
+  <p>Using later information in an earlier decision is called <strong>lookahead bias</strong>. An LLM creates another possible route: it may remember what happened to a named company. Removing names and dates can reduce this clue, but a distinctive event or number may still reveal the history.</p>
+  <p class="lesson-source">Read more: <a href="https://stockbench.github.io/" target="_blank" rel="noopener noreferrer">StockBench: sequential trading and daily information ↗</a></p>
+</section>
+
+<section class="lesson" id="project-inputs">
+  <div class="lesson-heading"><span class="lesson-number">05</span><h3>What do the input numbers mean?</h3></div>
+  <p>StockBench brings together prices, company information, and news. These describe different parts of the market. The table below explains common fields; the course data will determine which are available. A missing value means the information is unavailable; it does not mean the value is zero.</p>
+  <table><thead><tr><th>Input</th><th>Plain meaning</th></tr></thead><tbody><tr><td>Open and close</td><td>Prices at the start and end of a trading session.</td></tr><tr><td>Trading volume</td><td>The number of shares traded during a period.</td></tr><tr><td>Recent returns</td><td>Price changes measured relative to earlier prices.</td></tr><tr><td>Earnings per share</td><td>Company profit, under a stated accounting definition, divided by the relevant share count.</td></tr><tr><td>News</td><td>A report about an event, with a publication time and source.</td></tr></tbody></table>
+  <p>A price is a dollar amount for one share. A return is a relative change. For Stock A, a move from $50 to $52 gives a price return of ($52 − $50) / $50 = 4%. This does not yet include its $1 dividend.</p>
+  <p>One common company measure is the <strong>price-to-earnings ratio</strong>, or <strong>P/E</strong>:</p>
+  <div class="equation" role="math" aria-label="Price-to-earnings ratio equals share price divided by earnings per share">P/E = share price / earnings per share</div>
+  <aside class="example"><h4>A number needs context</h4><p>At a $50 price and $2 annual earnings per share, Stock A has P/E = 50 / 2 = 25. A lower P/E does not prove that a stock is a better buy. Expected growth, business risk, and the earnings period may differ. The usual positive-earnings interpretation also breaks down when earnings are zero or negative.</p></aside>
+  <p>Past earnings and forecast earnings are different inputs. News describes events and expectations; its tone is not a direct measurement of the next price move.</p>
+  <p class="lesson-source">Read more: <a href="https://syndication.finra.org/content/defining-value-investment" target="_blank" rel="noopener noreferrer">FINRA: prices and company value measures ↗</a></p>
+</section>
+
+<section class="lesson" id="project-accounting">
+  <div class="lesson-heading"><span class="lesson-number">06</span><h3>From a decision to a portfolio</h3></div>
+  <p>A portfolio contains cash and shares. Its value changes when prices move, dividends arrive, or costs are paid. For our two fictional stocks:</p>
+  <div class="equation" role="math" aria-label="Portfolio value equals cash plus shares of A times price of A plus shares of B times price of B">V = C + q<sub>A</sub>P<sub>A</sub> + q<sub>B</sub>P<sub>B</sub></div>
+  <p><em>V</em> is total value, <em>C</em> is cash, <em>q</em> is the number of shares, and <em>P</em> is the share price. A stock's <strong>weight</strong> is its holding value divided by <em>V</em>.</p>
+  <aside class="example"><h4>One account, three parts</h4><p>With $200 cash, 10 A shares at $50, and 15 B shares at $20, the account is worth $1,000. A has weight 50%, B has weight 30%, and cash has weight 20%.</p><p>If no shares are traded, A later reaches $52 and pays $1 per share, while B falls to $19. Cash becomes $210. The account is then worth $210 + 10 × $52 + 15 × $19 = <strong>$1,015</strong>, before trading costs.</p></aside>
+  <p>A target is the desired holding after a trade, rather than the amount to buy. In StockBench, <code>target_cash_amount</code> means the target dollar value held in a stock; it does not mean uninvested cash.</p>
+  <h4>Trading costs and basis points</h4>
+  <p>A <strong>basis point</strong>, or <strong>bp</strong>, is 0.01%. Thus 10 bps = 0.10% = 0.001.</p>
+  <aside class="example"><p>Consider a separate trade at the starting prices: sell 2 A shares for $100 and buy 5 B shares for $100. Total traded dollars are $200. At an illustrative fee of 10 bps on each trade, the fee is $200 × 0.001 = <strong>$0.20</strong>. Cash falls to $199.80, and the account is worth $999.80 immediately after trading.</p></aside>
+  <p>One common definition of <strong>turnover</strong> is total traded dollars divided by portfolio value before the trades. Here it is 200 / 1,000 = 20%. Some reports use half this amount. Fee rates, execution prices, and trade constraints depend on the runner's rules.</p>
+  <p class="lesson-source">Read more: <a href="https://www.investor.gov/introduction-investing/investing-basics/how-stock-markets-work/types-orders" target="_blank" rel="noopener noreferrer">Investor.gov: how orders are executed ↗</a> · <a href="https://github.com/ChenYXxxx/stockbench/blob/ce8b2b3483590646ad3b650ac8221f43f76fd091/stockbench/core/executor.py" target="_blank" rel="noopener noreferrer">StockBench's target-holding field ↗</a></p>
+</section>
+
+<section class="lesson" id="project-results">
+  <div class="lesson-heading"><span class="lesson-number">07</span><h3>Reading the result</h3></div>
+  <p><strong>Cumulative return</strong> is the total change from the starting account value. With no money added or withdrawn:</p>
+  <div class="equation" role="math" aria-label="Cumulative return equals final portfolio value divided by initial portfolio value minus one">R = V<sub>end</sub> / V<sub>start</sub> − 1</div>
+  <p>Here <em>R</em> is cumulative return. The account ending at $1,015 has R = 1,015 / 1,000 − 1 = <strong>1.5%</strong>. Returns over several days compound; simply adding them generally gives a different answer.</p>
+  <!-- DIAGRAM: Account path $1,000 → peak $1,100 → trough $990 → $1,015. Mark the peak-to-trough drop as 10% and the start-to-end change as +1.5%. The path is illustrative and has no deposits or withdrawals. -->
+  <p><strong>Drawdown</strong> measures a fall from a previous peak. Maximum drawdown is the largest such fall in the observed path:</p>
+  <div class="equation" role="math" aria-label="Drawdown equals one minus current value divided by the highest value reached so far">drawdown = 1 − current value / highest value so far</div>
+  <aside class="example"><p>A path of $1,000 → $1,100 → $990 → $1,015 ends with a 1.5% gain but has a <strong>10% maximum drawdown</strong>, because 1 − 990 / 1,100 = 10%. Some software, including StockBench's summary, reports this fall as −10%.</p></aside>
+  <p><strong>Downside risk</strong> focuses on returns below a chosen target. The <strong>Sortino ratio</strong> compares average return above that target with a measure of how much returns fall below the target. A target could be 0% per day. Its value depends on the target, time unit, and exact formula. StockBench uses its own calculation, so a number from another package may not match.</p>
+  <p>A <strong>benchmark</strong> is a clearly defined reference portfolio. Its market, dates, cash treatment, and costs affect the comparison. It gives context to a return; it is not a promise of what was easy to earn.</p>
+  <p>Prediction accuracy counts correct answers. Profit also depends on price-move size and invested dollars. Many correct predictions of small gains can be outweighed by a few large losses.</p>
+  <p class="lesson-source">Read more: <a href="https://rpc.cfainstitute.org/-/media/documents/code/gips/the-sortino-ratio.pdf" target="_blank" rel="noopener noreferrer">CFA Institute: the Sortino ratio ↗</a> · <a href="https://github.com/ChenYXxxx/stockbench/blob/ce8b2b3483590646ad3b650ac8221f43f76fd091/stockbench/backtest/metrics.py" target="_blank" rel="noopener noreferrer">StockBench metric definitions ↗</a></p>
+</section>

@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en">
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="theme-color" content="#8f2b3b"><title>Finance basics · 3073 Market Lab</title><meta name="description" content="Start with one share. Then follow the money through returns, portfolios, and trading costs."><link rel="icon" type="image/svg+xml" href="../favicon.svg?v=2"><link rel="stylesheet" href="../styles.css?v=7"><link rel="stylesheet" href="../tutorial.css?v=3"></head>
+<body class="tutorial-body">
+<a class="skip-link" href="#lesson-content">Skip to lessons</a>
+<header class="site-header tutorial-header"><a class="brand" href="../index.html" aria-label="3073 Market Lab home"><span class="brand-mark" aria-hidden="true"><i></i><i></i><i></i></span><span>3073 <b>MARKET LAB</b></span></a><a class="tutorial-back" href="../index.html#resources">← Project home</a></header>
+<main class="tutorial-layout">
+<aside class="tutorial-sidebar"><nav aria-label="Tutorial parts"><div class="sidebar-label">FINANCE, STEP BY STEP</div><a href="basics.html" class="part-link current" aria-current="page"><span>PART 01</span><strong>Finance basics</strong></a><a href="project.html" class="part-link"><span>PART 02</span><strong>Finance in this project</strong></a><a href="further.html" class="part-link"><span>PART 03</span><strong>Further learning</strong></a></nav><nav class="lesson-nav" aria-label="In this part"><div class="sidebar-label">IN THIS PART</div><a href="#basics-shares"><span>1.1</span>Stocks and returns</a><a href="#basics-portfolios"><span>1.2</span>Portfolios and weights</a><a href="#basics-path-and-costs"><span>1.3</span>Growth, losses, and costs</a></nav></aside>
+<article class="tutorial-article" id="lesson-content"><div class="tutorial-title"><div class="eyebrow">PART 01 / FINANCE GUIDE</div><h1>Finance basics</h1><p>Start with one share. Then follow the money through returns, portfolios, and trading costs.</p></div><section class="lesson" id="basics-shares">
+  <div class="lesson-kicker">1.1 / Stocks and returns</div>
+  <h2>What do you own when you buy a stock?</h2>
+  <p>A <strong>share</strong> is a small unit of ownership in a company. A <strong>stock price</strong> is the price of one share. If you own 10 shares and each is worth $50 in the market, your shares have a market value of $500.</p>
+  <p>A higher share price does not, by itself, mean a larger company or a better investment. Companies have different numbers of shares. <strong>Value</strong> can also mean an estimate of what a share is worth, based on the business and its future. That estimate may differ from its current market price.</p>
+  <p>You can gain or lose money when the price changes. A company may also pay a <strong>dividend</strong>: cash paid to its shareholders. Dividend payments are not guaranteed.</p>
+  <div class="equation" role="math" aria-label="Price return equals ending price minus starting price, divided by starting price">Price return = (P<sub>1</sub> − P<sub>0</sub>) / P<sub>0</sub></div>
+  <div class="equation" role="math" aria-label="Total return equals ending price minus starting price plus dividend per share, divided by starting price">Total return = (P<sub>1</sub> − P<sub>0</sub> + d) / P<sub>0</sub></div>
+  <p class="formula-note">P<sub>0</sub> is the starting price; P<sub>1</sub> is the ending price; d is the cash dividend per share during the period. These simple formulas assume one share is held throughout, with no trading costs or share splits. The dividend is kept as cash.</p>
+  <aside class="example">
+    <h3>Example · Stock A</h3>
+    <p>All examples use fictional stocks and US dollars. A starts at $50, ends at $52, and pays a $1 dividend per share.</p>
+    <p>Its price return is $2 / $50 = <strong>4%</strong>. Its total return is ($2 + $1) / $50 = <strong>6%</strong>. For 10 shares, this means a $20 price gain and $10 in dividends: $30 in total, before costs.</p>
+  </aside>
+  <figure class="lesson-figure"><div class="money-flow" role="img" aria-label="One share starts at 50 dollars. It ends worth 52 dollars and pays a 1 dollar cash dividend. The total gain is 3 dollars, or 6 percent."><div><span>START</span><strong>$50</strong><small>one share</small></div><b aria-hidden="true">→</b><div><span>END</span><strong>$52 <i>+ $1</i></strong><small>share value + cash dividend</small></div></div><figcaption>The share price rose by $2. The dividend adds $1. Together, the gain is $3 per share.</figcaption></figure>
+  <p class="lesson-source">Read more: <a href="https://www.investor.gov/introduction-investing/investing-basics/investment-products/stocks" target="_blank" rel="noopener noreferrer">Stocks · Investor.gov ↗</a></p>
+</section>
+
+<section class="lesson" id="basics-portfolios">
+  <div class="lesson-kicker">1.2 / Portfolios and weights</div>
+  <h2>A portfolio includes both shares and cash.</h2>
+  <p>A <strong>portfolio</strong> is the collection of assets you hold. Here it contains Stock A, Stock B, and cash. Its value is the sum of all three parts.</p>
+  <div class="equation" role="math" aria-label="Portfolio value equals cash plus the market value of A and B">V = C + q<sub>A</sub>P<sub>A</sub> + q<sub>B</sub>P<sub>B</sub></div>
+  <p class="formula-note">V is portfolio value; C is cash; q is the number of shares; P is price per share. The labels A and B identify the two stocks.</p>
+  <p>A <strong>weight</strong> is the fraction of the portfolio invested in one asset. For A, w<sub>A</sub> = q<sub>A</sub>P<sub>A</sub> / V. The cash weight is w<sub>C</sub> = C / V. With no borrowing or short selling, the weights are non-negative and add to 1.</p>
+  <aside class="example">
+    <h3>Example · One $1,000 portfolio</h3>
+    <div class="table-scroll"><table><thead><tr><th>Holding</th><th>Starting value</th><th>Starting weight</th></tr></thead><tbody><tr><td>10 shares of A at $50</td><td>$500</td><td>50%</td></tr><tr><td>15 shares of B at $20</td><td>$300</td><td>30%</td></tr><tr><td>Cash</td><td>$200</td><td>20%</td></tr></tbody></table></div>
+    <p>A ends at $52 and pays its $1 dividend. B ends at $19 with no dividend. There are no trades or costs, and cash earns no interest in this example.</p>
+    <p>The ending values are A: $520, B: $285, cash: $210. Total value is <strong>$1,015</strong>, so the portfolio return is <strong>1.5%</strong>.</p>
+  </aside>
+  <figure class="lesson-figure"><div class="allocation-title"><span>THE STARTING $1,000</span><b>100% of the account</b></div><div class="allocation-bar" role="img" aria-label="Stock A: 500 dollars, 50 percent. Stock B: 300 dollars, 30 percent. Cash: 200 dollars, 20 percent."><span style="width:50%">A · 50%</span><span style="width:30%">B · 30%</span><span style="width:20%">Cash · 20%</span></div><div class="allocation-labels"><span>Stock A <b>$500</b></span><span>Stock B <b>$300</b></span><span>Cash <b>$200</b></span></div><figcaption>A weight tells us where the money is. Cash is part of the portfolio, too.</figcaption></figure>
+  <p>The same result comes from the starting weights and each asset's return:</p>
+  <div class="equation" role="math" aria-label="Portfolio return equals the sum of starting weight times return for each asset">r<sub>p</sub> = w<sub>A</sub>r<sub>A</sub> + w<sub>B</sub>r<sub>B</sub> + w<sub>C</sub>r<sub>C</sub><br>= 0.50 × 6% + 0.30 × (−5%) + 0.20 × 0% = 1.5%</div>
+  <p class="formula-note">r<sub>p</sub> is the portfolio return. Each r is that asset's return over the same period. This equation uses starting weights and assumes no trades during the period.</p>
+  <p><strong>Diversification</strong> means spreading money across different investments. It can reduce the effect of one company doing badly. But many stocks can fall together. <strong>Correlation</strong> measures how returns move together, from −1 to +1. Lower correlation can make a mix more stable; it does not remove all risk. Two fictional stocks are enough to explain the math, not to show a well-diversified real portfolio.</p>
+  <p class="lesson-source">Read more: <a href="https://www.investor.gov/introduction-investing/investing-basics/glossary/diversification" target="_blank" rel="noopener noreferrer">Diversification · Investor.gov ↗</a></p>
+</section>
+
+<section class="lesson" id="basics-path-and-costs">
+  <div class="lesson-kicker">1.3 / Growth, losses, and costs</div>
+  <h2>Returns multiply. Trading also has a cost.</h2>
+  <p>A return in the next period acts on the money left after the previous period. This is <strong>compounding</strong>.</p>
+  <div class="equation" role="math" aria-label="Value after two periods equals starting value times one plus each period return">V<sub>2</sub> = V<sub>0</sub>(1 + r<sub>1</sub>)(1 + r<sub>2</sub>)</div>
+  <p class="formula-note">V<sub>0</sub> is starting portfolio value; V<sub>2</sub> is value after two periods; r<sub>1</sub> and r<sub>2</sub> are the two portfolio returns. No money is added or withdrawn.</p>
+  <aside class="example">
+    <h3>Example · Up 10%, then down 10%</h3>
+    <p>Consider another possible path for the same $1,000 portfolio: $1,000 → $1,100 → $990.</p>
+    <p>The two-period return is 1.10 × 0.90 − 1 = <strong>−1%</strong>, not zero. The fall from the $1,100 peak to $990 is a <strong>10% drawdown</strong>. A gain of about 11.11% from $990 is needed to return to $1,100.</p>
+  </aside>
+  <figure class="lesson-figure"><svg class="value-diagram" viewBox="0 0 430 200" role="img" aria-label="Illustrative path from 1000 dollars to 1100 and then 990. Returns are positive 10 percent then negative 10 percent. Total return is negative 1 percent."><path class="diagram-grid" d="M30 48H400 M30 90H400 M30 138H400"/><path class="diagram-line" d="M48 130 L200 48 L374 138"/><circle cx="48" cy="130" r="4"/><circle cx="200" cy="48" r="4"/><circle cx="374" cy="138" r="4"/><g class="diagram-labels"><text x="48" y="115">$1,000</text><text x="200" y="30">$1,100</text><text x="374" y="163">$990</text><text x="112" y="70">+10%</text><text x="290" y="75">−10%</text></g><text class="diagram-axis" x="32" y="190">Earlier</text><text class="diagram-axis" x="365" y="190">Later</text></svg><figcaption>Up 10%, then down 10%: the ending value is 1% below the start. The drop from the peak is 10%. The path is illustrative.</figcaption></figure>
+  <p><strong>Risk</strong> concerns uncertain outcomes, including losses. <strong>Volatility</strong> describes how much returns vary. <strong>Drawdown</strong> describes a fall from a previous peak. These describe different parts of the same path.</p>
+  <p><strong>Trading fees</strong> are direct charges. One <strong>basis point</strong> (bp) is 0.01 percentage point. A fee of 10 bps is 0.10%: buying $500 of A costs $0.50 in fees. Selling it for $520 costs another $0.52 at the same rate.</p>
+  <p>The <strong>bid</strong> is the best displayed buying price; the <strong>ask</strong> is the best displayed selling price. Their difference is the <strong>spread</strong>. If A's bid is $49.95 and ask is $50.05, buying 10 shares at the ask and immediately selling at the unchanged bid loses $1, even with no commission.</p>
+  <p><strong>Slippage</strong> is the difference between an expected trading price and the actual price received. Prices can move, and a large order may fill at several prices. Fees, spreads, and slippage are different costs; a simulation may include only some of them.</p>
+  <p class="lesson-source">Read more: <a href="https://www.investor.gov/introduction-investing/getting-started/understanding-fees" target="_blank" rel="noopener noreferrer">Understanding fees · Investor.gov ↗</a></p>
+</section>
+<nav class="next-part" aria-label="Continue reading"><a href="../index.html#resources"><small>BACK TO</small><strong>Market Lab</strong></a><a href="project.html"><small>NEXT PART</small><strong>Finance in this project →</strong></a></nav></article>
+</main><footer class="tutorial-footer"><span>3073 MARKET LAB</span><p>DSAA3073 · Theories in Data Science</p><a href="https://lixin2002cn.github.io/dsaa3073/" target="_blank" rel="noopener noreferrer">Course home ↗</a></footer>
+</body></html>
