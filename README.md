@@ -9,6 +9,7 @@ The Market Lab connects course ideas with simulated financial decisions in Stock
 - Home: https://lixin2002cn.github.io/3073-Project/
 - Project Requirements & Rubric: https://lixin2002cn.github.io/3073-Project/requirements.html
 - Project introduction slides (PDF): https://lixin2002cn.github.io/3073-Project/downloads/DSAA3073-Market-Lab-Slides.pdf
+- Course starter code and cached data: https://github.com/lixin2002cn/3073-StockBench
 
 The home page and requirements page link to the slides in `docs/downloads/`. Replace that PDF to publish an updated version at the same address.
 
@@ -39,4 +40,4 @@ node check-experiment.cjs
 
 GitHub Pages publishes the `docs/` folder on the `main` branch. Push an update to `main` to publish it. The website is static HTML, CSS, and JavaScript; no API keys, paid services, or build dependencies are required.
 
-All playground prices and news are fictional teaching data. Course data and the StockBench execution interface are announced separately.
+All playground prices and news are fictional teaching data. The [course starter](https://github.com/lixin2002cn/3073-StockBench) includes the released StockBench data, a shared strategy interface, and a baseline that runs offline without an API key.
