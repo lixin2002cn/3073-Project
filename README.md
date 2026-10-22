@@ -8,6 +8,9 @@ The Market Lab connects course ideas with simulated financial decisions in Stock
 
 - Home: https://lixin2002cn.github.io/3073-Project/
 - Project Requirements & Rubric: https://lixin2002cn.github.io/3073-Project/requirements.html
+- Project introduction slides (PDF): https://lixin2002cn.github.io/3073-Project/downloads/DSAA3073-Market-Lab-Slides.pdf
+
+The home page and requirements page link to the slides in `docs/downloads/`. Replace that PDF to publish an updated version at the same address.
 
 ## Edit and preview
 
