@@ -8,7 +8,7 @@
   <meta name="description" content="DSAA3073 project requirements: report, presentation, grading, and Canvas submission.">
   <link rel="icon" type="image/svg+xml" href="favicon.svg?v=2">
   <link rel="stylesheet" href="styles.css?v=7">
-  <link rel="stylesheet" href="requirements.css?v=2">
+  <link rel="stylesheet" href="requirements.css?v=3">
 </head>
 <body class="requirements-body">
   <a class="skip-link" href="#main">Skip to requirements</a>
@@ -55,7 +55,18 @@
         <p class="rubric-principle">Strong reasoning and analysis can earn full credit even when returns are negative.</p>
       </section>
     </div>
-    <p class="requirements-policy" id="tools-and-data"><strong>Vibe coding is welcome.</strong> Briefly name your AI tools and verify your work. Do not train or tune on the test set or use future information. Note any risk of historical memory in pre-trained models.</p>
+    <section class="data-split" id="data-split" aria-labelledby="data-split-title">
+      <h2 id="data-split-title">Course dates · 2025</h2>
+      <ol class="split-timeline" aria-label="Three consecutive periods: training and development, validation, then testing.">
+        <li><span>TRAINING / DEVELOPMENT</span><strong>March–April</strong><small>1 Mar–30 Apr · 42 trading days</small></li>
+        <li><span>VALIDATION</span><strong>May</strong><small>1–31 May · 21 trading days</small></li>
+        <li><span>TEST</span><strong>June</strong><small>1–30 Jun · 20 trading days</small></li>
+      </ol>
+      <p>Develop your model, rule, or prompt using March–April data. Use May to choose methods and settings, then report the final result for June. Training a new model is optional.</p>
+      <p><strong>Keep time order; do not randomly shuffle dates.</strong> Choose your method, settings, initial prompt, and online update rule before testing. During June, online learning may use feedback only after it becomes available. Do not replay June to tune your method.</p>
+      <p>The starter defaults to March–April. Use <code>--split validation</code> for May and <code>--split test</code> for June. Each run starts a fresh account; your strategy loads any saved model or learning state. <a href="https://github.com/lixin2002cn/3073-StockBench/blob/main/STUDENT_QUICKSTART.md#course-dates-train-validate-then-test" target="_blank" rel="noopener noreferrer">Commands and information rules ↗</a></p>
+    </section>
+    <p class="requirements-policy" id="tools-and-data"><strong>Vibe coding is welcome.</strong> Briefly name your AI tools and verify your work. Use only information available at each decision. The data is public historical data; the test period is not hidden. Note any risk of historical memory in pre-trained models.</p>
     <figure class="project-quote" lang="zh-CN">
       <blockquote><p>最后，还是要有个好心境、好家庭、好身体。投资到最后，反映的是你个人的真实性情和价值观。健康的环境和心情是长期修行的结果。成功诚然需要运气和际遇的配合，但能否幸福地去做投资则掌握在你自己手里。</p></blockquote>
       <figcaption>张磊 · 《投资中最简单的事》推荐序</figcaption>
