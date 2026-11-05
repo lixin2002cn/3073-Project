@@ -111,7 +111,9 @@ L(g_w)\ge L_H^*\qquad\text{对所有 }w\in\Delta_M.
 
 得到第一个结论后，改变或放宽你用到的一个条件。原来的证明还有哪些步骤成立？说明在新条件下你能证明什么，哪些问题还有待解决。
 
-## 三、研究范围与报告要求
+## 三、报告要求与汇报安排
+
+**报告截止日期为 2026 年 11 月 27 日（星期五）。**
 
 报告采用 IEEE 会议论文的双栏格式。**正文最多 6 页**，图表计入正文页数，参考文献和附录另计。[Overleaf 上的 IEEE Conference 模板](https://www.overleaf.com/latex/templates/ieee-conference-template/grfzhhncsfqn)
 
@@ -126,3 +128,16 @@ L(g_w)\ge L_H^*\qquad\text{对所有 }w\in\Delta_M.
 **选做模拟。** 自行选择参数和取值范围，先写下你的猜想，再比较模拟得到的收益和理论下界。说明实验支持什么结论，以及这个结论适用于哪些情形。
 
 相关讲义包括第 3–5 讲的容量与泛化理论，以及第 8–9 讲的投票分类器、指数损失与 margin。
+
+### 汇报顺序
+
+每人汇报 20 分钟，随后讨论 10 分钟。
+
+1. Ocean Kun Hei OU
+2. Zehan LU
+3. Yiqiu LIU
+4. Guangquan FENG
+5. Zhiyuan WANG
+6. Hengshuo LIU
+7. Jincheng JIANG
+8. Wenzhe YU

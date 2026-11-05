@@ -111,7 +111,9 @@ If the lower bound for one vote is zero or negative, the maximum gain could stil
 
 Once you have a result, change or relax one condition you used. Which steps of your proof still work? Explain what you can show under the new condition and what remains open.
 
-## 3. What to include in your report
+## 3. Report and presentations
+
+**Report due Friday, November 27, 2026.**
 
 Use the IEEE two-column conference format. Keep the main text to **6 pages or fewer**, including figures and tables. References and appendices do not count toward the limit. [IEEE Conference template on Overleaf](https://www.overleaf.com/latex/templates/ieee-conference-template/grfzhhncsfqn)
 
@@ -126,3 +128,16 @@ Work on your own. For each of the three questions, give your first result. Then 
 **Optional simulation.** Choose a parameter and the values to test. Write down what you expect, then compare the gain in your simulation with your theoretical lower bound. State what your results support and for which settings.
 
 Lectures 3–5 cover capacity and generalization. Lectures 8–9 cover voting classifiers, exponential loss and margins.
+
+### Presentation order
+
+Each student has 20 minutes to present, followed by 10 minutes of discussion.
+
+1. Ocean Kun Hei OU
+2. Zehan LU
+3. Yiqiu LIU
+4. Guangquan FENG
+5. Zhiyuan WANG
+6. Hengshuo LIU
+7. Jincheng JIANG
+8. Wenzhe YU

@@ -14,7 +14,7 @@ const locales = {
     hero: 'Learn the voting weights from a sample. Then compare the vote with the best single model on new examples.',
     diagram: 'From base models to a weighted vote', sum: 'Weighted sum', score: 'Vote score',
     diagramNote: 'The models are fixed. The sample determines the weights.',
-    contents: 'On this page', navigation: ['Problem setup', 'Research questions', 'Your report'],
+    contents: 'On this page', navigation: ['Problem setup', 'Research questions', 'Report and presentations'],
     questions: 'The three questions', sectionLabels: ['SETUP', 'QUESTIONS', 'REPORT'],
     steps: [
       ['Q1', 'Basics', 'Classification error', 'How many ways can the vote label a set of inputs?'],
@@ -32,7 +32,7 @@ const locales = {
     hero: '用样本学习投票权重，再比较加权投票与最佳单模型在新样本上的分类错误率。',
     diagram: '从基模型到加权投票', sum: '加权求和', score: '投票分数',
     diagramNote: '基模型固定，投票权重由样本确定。',
-    contents: '阅读目录', navigation: ['统一设定', '三个研究问题', '报告要求'],
+    contents: '阅读目录', navigation: ['统一设定', '三个研究问题', '报告与汇报'],
     questions: '三个研究问题', sectionLabels: ['问题设定', '研究问题', '项目报告'],
     steps: [
       ['第一问', '基础', '分类错误率', '组合能产生多少种分类结果？'],
@@ -46,6 +46,7 @@ const sectionIds = ['setting', 'question-1', 'report'];
 const headingIds = [
   ['voting-models', 'risk-definitions', 'potential-gain'],
   ['question-1-1', 'question-1-2', 'question-1-3'],
+  ['presentation-order'],
 ];
 const arrow = '<svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M5 12h14m-6-6 6 6-6 6" stroke="currentColor" stroke-width="1.5"/></svg>';
 const printer = '<svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M7 8V3h10v5M7 17H4V8h16v9h-3M7 14h10v7H7z" stroke="currentColor" stroke-width="1.5"/><circle cx="17" cy="11" r="1" fill="currentColor"/></svg>';
