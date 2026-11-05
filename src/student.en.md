@@ -113,6 +113,8 @@ Once you have a result, change or relax one condition you used. Which steps of y
 
 ## 3. What to include in your report
 
+Use the IEEE two-column conference format. Keep the main text to **6 pages or fewer**, including figures and tables. References and appendices do not count toward the limit. [IEEE Conference template on Overleaf](https://www.overleaf.com/latex/templates/ieee-conference-template/grfzhhncsfqn)
+
 Work on your own. For each of the three questions, give your first result. Then ask a question about it and try to answer it. In your report, explain why you made each attempt and what you found. If another approach gives the same bound or a weaker one, explain why. In your presentation, show how a finding in one question shaped your work on the next.
 
 1. Describe your models, data distribution and assumptions. Say which quantities you know and which you estimate from the sample.
