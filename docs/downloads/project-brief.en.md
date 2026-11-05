@@ -133,11 +133,16 @@ Lectures 3–5 cover capacity and generalization. Lectures 8–9 cover voting cl
 
 Each student has 20 minutes to present, followed by 10 minutes of discussion.
 
-1. Ocean Kun Hei OU
-2. Zehan LU
-3. Yiqiu LIU
-4. Guangquan FENG
-5. Zhiyuan WANG
-6. Hengshuo LIU
-7. Jincheng JIANG
-8. Wenzhe YU
+#### Lecture 12 · Monday, November 30, 2026
+
+1. Yiqiu LIU
+2. Wenzhe YU
+3. Ocean Kun Hei OU
+4. Zehan LU
+
+#### Lecture 13 · Monday, December 7, 2026
+
+5. Guangquan FENG
+6. Zhiyuan WANG
+7. Hengshuo LIU
+8. Jincheng JIANG

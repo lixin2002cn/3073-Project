@@ -133,11 +133,16 @@ L(g_w)\ge L_H^*\qquad\text{对所有 }w\in\Delta_M.
 
 每人汇报 20 分钟，随后讨论 10 分钟。
 
-1. Ocean Kun Hei OU
-2. Zehan LU
-3. Yiqiu LIU
-4. Guangquan FENG
-5. Zhiyuan WANG
-6. Hengshuo LIU
-7. Jincheng JIANG
-8. Wenzhe YU
+#### 第 12 讲 · 2026 年 11 月 30 日（星期一）
+
+1. Yiqiu LIU
+2. Wenzhe YU
+3. Ocean Kun Hei OU
+4. Zehan LU
+
+#### 第 13 讲 · 2026 年 12 月 7 日（星期一）
+
+5. Guangquan FENG
+6. Zhiyuan WANG
+7. Hengshuo LIU
+8. Jincheng JIANG
