@@ -46,7 +46,7 @@ const sectionIds = ['setting', 'question-1', 'report'];
 const headingIds = [
   ['voting-models', 'risk-definitions', 'potential-gain'],
   ['question-1-1', 'question-1-2', 'question-1-3'],
-  ['presentation-order'],
+  ['grading', 'presentation-order'],
 ];
 const arrow = '<svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M5 12h14m-6-6 6 6-6 6" stroke="currentColor" stroke-width="1.5"/></svg>';
 const printer = '<svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M7 8V3h10v5M7 17H4V8h16v9h-3M7 14h10v7H7z" stroke="currentColor" stroke-width="1.5"/><circle cx="17" cy="11" r="1" fill="currentColor"/></svg>';

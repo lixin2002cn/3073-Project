@@ -129,6 +129,12 @@ Work on your own. For each of the three questions, give your first result. Then 
 
 Lectures 3–5 cover capacity and generalization. Lectures 8–9 cover voting classifiers, exponential loss and margins.
 
+### How we grade the project
+
+We look at your work on all three questions across your report, talk, and class discussion. Your reasoning matters most. What assumptions do you use? Which steps support your conclusion? A simple example can earn a high grade if the proof is sound and you explain when the result holds.
+
+We also value what you learn by following up on a result. For example, a second method may give a weaker bound. If you can show which step made the bound weaker, that attempt counts toward your grade. In your talk, you can choose one attempt and explain why you tried it and what you learned. If a question is still open during the discussion, explain what you have proved and where you need a new idea.
+
 ### Presentation order
 
 Each student has 20 minutes to present, followed by 10 minutes of discussion.
