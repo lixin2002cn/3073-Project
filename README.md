@@ -1,14 +1,7 @@
-# 3073-Project
+# DSAA3073 Final Project
 
-An English-language project website for **DSAA3073 · Theories in Data Science**.
+When does a weighted vote make fewer mistakes than the best single model? The individual project has three questions on classification error, exponential risk, and the gain from voting.
 
-The Market Lab connects course ideas with simulated financial decisions in StockBench. It includes an interactive synthetic market, open directions, three finance tutorials, and the project requirements and rubric.
+[English project brief](https://lixin2002cn.github.io/3073-Project/) · [中文题面](https://lixin2002cn.github.io/3073-Project/zh.html)
 
-## Website
-
-- Home: https://lixin2002cn.github.io/3073-Project/
-- Project Requirements & Rubric: https://lixin2002cn.github.io/3073-Project/requirements.html
-- Project introduction slides (PDF): https://lixin2002cn.github.io/3073-Project/downloads/DSAA3073-Market-Lab-Slides.pdf
-- Course starter code and cached data: https://github.com/lixin2002cn/3073-StockBench
-
-The home page and requirements page link to the slides in `docs/downloads/`. Replace that PDF to publish an updated version at the same address.
+Edit the briefs in `src/student.en.md` and `src/student.md`. With Node.js 22 or later, run `npm ci` and `npm run build`. Commit the updated sources and generated `docs/` together. GitHub Pages publishes `docs/` from the `main` branch.
