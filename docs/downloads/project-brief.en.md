@@ -115,7 +115,11 @@ Once you have a result, change or relax one condition you used. Which steps of y
 
 ## 3. Report and presentations
 
-Submit **both your report and your presentation slides** to Canvas by **Friday, November 27, 2026**.
+| Date | What happens |
+| --- | --- |
+| Friday, November 20 | Each student submits an individual project report to Canvas. |
+| Saturday, November 21 | The teaching team announces the groups and presentation order. |
+| Sunday, November 29 | Each group submits one slide deck to Canvas. |
 
 Use the IEEE two-column conference format. Keep the main text to **6 pages or fewer**, including figures and tables. References and appendices do not count toward the limit. [IEEE Conference template on Overleaf](https://www.overleaf.com/latex/templates/ieee-conference-template/grfzhhncsfqn)
 
@@ -135,27 +139,30 @@ Lectures 3–5 cover capacity and generalization. Lectures 8–9 cover voting cl
 
 ### How we grade the project
 
-- **Peer assessment (20%)** is based only on your presentation.
-- **Instructor and TA assessment (80%)** is based on both your presentation and your written report.
+Questions 1 and 2 are worth **30 base points**. The individual report and the presentation each account for **50%** of the base score. Peers award **30%** of the presentation grade and the teaching team awards **70%**.
+
+**Each student earns an individual presentation grade.** Peers assess each student's contribution to the presentation. The teaching team considers both that contribution and the student's answers during the discussion.
+
+| Component | Graded by | Maximum base points |
+| --- | --- | ---: |
+| Individual report | Teaching team (instructor and TA) | 15 |
+| Presentation | Peers | 4.5 |
+| Presentation | Teaching team (instructor and TA) | 10.5 |
+
+Optional Question 3 can add up to **5 bonus points** to the base score, for a maximum of **35 points** with the bonus.
 
 Your reasoning matters most. What assumptions do you use? Which steps support your conclusion? A simple example can earn a high grade if the proof is sound and you explain when the result holds.
 
 We also value what you learn by following up on a result. For example, a second method may give a weaker bound. If you can show which step made the bound weaker, that attempt counts toward your grade. In your talk, you can choose one attempt and explain why you tried it and what you learned. If a question is still open during the discussion, explain what you have proved and where you need a new idea.
 
-### Presentation order
+### Group presentations and discussion
 
-Each student has 20 minutes to present, followed by 10 minutes of discussion.
+Each group gives one joint presentation. Every member must take part in both the presentation and the discussion. Each group has **30 minutes to present** and **20 minutes for discussion**, followed by a **10-minute break and changeover**.
 
 #### Lecture 12 · Monday, November 30, 2026
 
-1. Yiqiu LIU
-2. Wenzhe YU
-3. Ocean Kun Hei OU
-4. Zehan LU
+Groups 1 and 2 present.
 
 #### Lecture 13 · Monday, December 7, 2026
 
-5. Guangquan FENG
-6. Zhiyuan WANG
-7. Hengshuo LIU
-8. Jincheng JIANG
+Groups 3 and 4 present.
