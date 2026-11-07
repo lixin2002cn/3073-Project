@@ -62,7 +62,9 @@ Each base model corresponds to an allowed weight vector, so \(G(P)\ge0\). If \(G
 
 ## 2. Three research questions
 
-### Question 1 · How can we bound the error rate of a vote?
+Questions 1 and 2 are required and worth 30 points in total. Question 3 is optional and worth up to 5 bonus points.
+
+### Question 1 (required) · How can we bound the error rate of a vote?
 
 Fix \(k\) inputs and record the predictions of the \(M\) base models. As you change the weights, how many different lists of labels can the vote produce? Use the capacity of the voting class \(\mathcal G=\{g_w:w\in\Delta_M\}\) to bound the gap between sample error and population error. For any \(0<\delta<1\), show that the bound holds for all weights at once, with probability at least \(1-\delta\) over the draw of the sample.
 
@@ -75,7 +77,7 @@ Give a formula for \(B_{01}\), or give its order of growth and state when it hol
 
 Use your result to write an upper bound \(U_{01}(w)\) on the population classification error rate. Explain why it also applies to \(\widehat w\) chosen using the same sample. You will compare this bound with the one you get in Question 2.
 
-### Question 2 · What does exponential risk tell us about classification error?
+### Question 2 (required) · What does exponential risk tell us about classification error?
 
 Analyze the class of ensemble scores \(\mathcal F=\{f_w:w\in\Delta_M\}\). Show that the following two-sided bound on exponential risk holds with probability at least \(1-\delta\).
 
@@ -89,7 +91,7 @@ Analyze the class of ensemble scores \(\mathcal F=\{f_w:w\in\Delta_M\}\). Show t
 
 Choose an example or a family of models where you can calculate both \(U_{01}(w)\) and \(U_{\exp}(w)\). Use the same sample and weights, with one confidence level for both bounds together. Work out how much uncertainty comes from the finite sample and how much you lose by using exponential risk to bound classification error. Which effect matters more in your example? Use your comparison to explain what you can say about the vote with learned weights \(\widehat w\).
 
-### Question 3 · What determines how much a vote can reduce error?
+### Question 3 (optional, up to 5 bonus points) · What determines how much a vote can reduce error?
 
 Choose a set of base models and a data distribution, or build a family of models with a parameter you can vary. Pick one condition that you think affects the maximum gain \(G(P)\). What can you prove under your assumptions? Give a worked example and explain which results from Questions 1 and 2 apply.
 
@@ -113,17 +115,17 @@ Once you have a result, change or relax one condition you used. Which steps of y
 
 ## 3. Report and presentations
 
-**Report due Friday, November 27, 2026.**
+Submit **both your report and your presentation slides** to Canvas by **Friday, November 27, 2026**.
 
 Use the IEEE two-column conference format. Keep the main text to **6 pages or fewer**, including figures and tables. References and appendices do not count toward the limit. [IEEE Conference template on Overleaf](https://www.overleaf.com/latex/templates/ieee-conference-template/grfzhhncsfqn)
 
 You are welcome and encouraged to work with AI on this project. You can use it to organize your ideas, work through complex derivations, and test your conclusions with code. The depth of your answers often depends on how well you understand the problem, which follow-up questions you ask, and how you judge whether a derivation holds.
 
-For each of the three questions, give your first result. Then ask a question about it and try to answer it. In your report, explain why you made each attempt and what you found. If another approach gives the same bound or a weaker one, explain why. In your presentation, show how a finding in one question shaped your work on the next.
+For each question you answer, give your first result. Then ask a question about it and try to answer it. In your report, explain why you made each attempt and what you found. If another approach gives the same bound or a weaker one, explain why. In your presentation, show how a finding in one question shaped your work on the next.
 
 1. Describe your models, data distribution and assumptions. Say which quantities you know and which you estimate from the sample.
 2. Give your bounds and proofs for Questions 1 and 2. Compare the two error bounds for the same vote and explain why they differ.
-3. Give a worked example for Question 3. Explain which condition your proof depends on and what you found when you changed it.
+3. If you attempt Question 3, give a worked example. Explain which condition your proof depends on and what you found when you changed it.
 4. For each probability guarantee, say what is sampled at random and how the bound depends on the parameters. If you use several bounds together, explain why they all hold with probability at least \(1-\delta\).
 5. List the course notes and other sources you used. When you cite a theorem, explain why its assumptions hold in your setting.
 
@@ -133,7 +135,10 @@ Lectures 3–5 cover capacity and generalization. Lectures 8–9 cover voting cl
 
 ### How we grade the project
 
-We look at your work on all three questions across your report, talk, and class discussion. Your reasoning matters most. What assumptions do you use? Which steps support your conclusion? A simple example can earn a high grade if the proof is sound and you explain when the result holds.
+- **Peer assessment (20%)** is based only on your presentation.
+- **Instructor and TA assessment (80%)** is based on both your presentation and your written report.
+
+Your reasoning matters most. What assumptions do you use? Which steps support your conclusion? A simple example can earn a high grade if the proof is sound and you explain when the result holds.
 
 We also value what you learn by following up on a result. For example, a second method may give a weaker bound. If you can show which step made the bound weaker, that attempt counts toward your grade. In your talk, you can choose one attempt and explain why you tried it and what you learned. If a question is still open during the discussion, explain what you have proved and where you need a new idea.
 

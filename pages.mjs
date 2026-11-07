@@ -17,9 +17,9 @@ const locales = {
     contents: 'On this page', navigation: ['Problem setup', 'Research questions', 'Report and presentations'],
     questions: 'The three questions', sectionLabels: ['SETUP', 'QUESTIONS', 'REPORT'],
     steps: [
-      ['Q1', 'Basics', 'Classification error', 'How many ways can the vote label a set of inputs?'],
-      ['Q2', 'Next step', 'Exponential risk', 'What error bound can we get from exponential risk?'],
-      ['Q3', 'Open question', 'Gain from voting', 'What changes the gain from voting?'],
+      ['Q1', 'Required', 'Classification error', 'How many ways can the vote label a set of inputs?'],
+      ['Q2', 'Required', 'Exponential risk', 'What error bound can we get from exponential risk?'],
+      ['Q3', 'Optional', 'Gain from voting', 'What changes the gain from voting?'],
     ],
   },
   zh: {
@@ -35,9 +35,9 @@ const locales = {
     contents: '阅读目录', navigation: ['统一设定', '三个研究问题', '报告与汇报'],
     questions: '三个研究问题', sectionLabels: ['问题设定', '研究问题', '项目报告'],
     steps: [
-      ['第一问', '基础', '分类错误率', '组合能产生多少种分类结果？'],
-      ['第二问', '进阶', '指数风险', '从指数风险可以推导出怎样的分类界？'],
-      ['第三问', '开放研究', '组合的收益', '什么条件会影响组合的收益？'],
+      ['第一问', '必答', '分类错误率', '组合能产生多少种分类结果？'],
+      ['第二问', '必答', '指数风险', '从指数风险可以推导出怎样的分类界？'],
+      ['第三问', '选做', '组合的收益', '什么条件会影响组合的收益？'],
     ],
   },
 };
